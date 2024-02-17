@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Timeline </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Maricel Castro</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="redirectToIndex('#about')">About</a></li>
+                <li><a href="#experience" onclick="redirectToIndex('#experience')">Experience</a></li>
+                <li><a href="#projects" onclick="redirectToIndex('#projects')">Recent</a></li>
+                <li><a href="timeline.html" onclick="redirectToIndex('timeline.html')">Timeline</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="#contact" onclick="redirectToIndex('#contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Maricel Castro</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="redirectToIndex('#about')">About</a></li>
+                    <li><a href="#experience" onclick="redirectToIndex('#experience')">Experience</a></li>
+                    <li><a href="#projects" onclick="redirectToIndex('#projects')">Recent</a></li>
+                    <li><a href="timeline.html" onclick="redirectToIndex('timeline.html')">Timeline</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#contact" onclick="redirectToIndex('#contact')">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            // Your existing toggleMenu() function code
+        }
+        function redirectToIndex(destination) {
+            // Redirect to index.html
+            localStorage.setItem('redirectDestination', destination);
+            window.location.href = "index.html";
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var redirectDestination = localStorage.getItem('redirectDestination');
+            if (redirectDestination) {
+                localStorage.removeItem('redirectDestination');
+                var targetElement = document.querySelector(redirectDestination);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+
+
+
+
+    <h1 class="title">TIMELINE</h1>
+    <p class="section__text__p1">From 2009 to 2021, thanks to Mrs. Maricel M. Castro, Master Teacher II, formerly at
+        Binitayan Elementary School and now at Daraga North Central School, these accomplishments were achieved.</p>
+
+    <section class="timeline-section">
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">November 5, 2009</div>
+                <div class="timeline-content">
+                    <h3>2009 District Music and Dance Competition </h3>
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="timeline-assets/pep2009.jpg" />
+                        </div>
+                    </div>
+                    <p>Binitayan Warriors of Binitayan Elementary School was awarded as Champions in the Pep Squad
+                        Competition held at Daraga North Central School </p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://youtu.be/LLeWBvdRVJ4?si=BVAJCE0XHJE6TRua'">
+                        View Performance Video
+                    </button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">May 27, 2010</div>
+                <div class="timeline-content">
+                    <h3>1st ever LCC Kiddie Dance Showdown </h3>
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="timeline-assets/1stkiddie.jpg" />
+                        </div>
+                    </div>
+                    <p>Binitayan Elem. School Warriors were hailed as Champions held at the LCC Event Center 1, Legazpi
+                        City, Albay. </p>
+
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">October 18, 2010</div>
+                <div class="timeline-content">
+                    <h3>LITMUSDA Children's Choir & Pep Squad</h3>
+                    <img src="timeline-assets/litmus.png" />
+                    <p>Latin Dancers of Binitayan Dance Troupe (Binitayan Warriors) Cluster B joined and became
+                        Champions again. It was held in Camalig North Central School Gymnasium. Other districts like
+                        Camalig South District, Camalig North District, Daraga South District, Manito District,
+                        Guinobatan West District, Guinobatan East District and Jovellar District also participated in
+                        the said event. </p>
+                    <div class="btn-container">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 15, 2010</div>
+                <div class="timeline-content">
+                    <h3>Daraga Festival 2010: Daraga Dance Showtime</h3>
+                    <img src="timeline-assets/danceshowtime2010.jpg" />
+                    <p>They also became part of the Daraga Festival 2010: Daraga Dance Showtime and was hailed as the
+                        Grand Champion at Daraga Covered Court. </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https:'">
+                            View Video
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">May 2010</div>
+                <div class="timeline-content">
+                    <h3>Pilipinas Got Talent Season 2</h3>
+
+                    <img src="timeline-assets/pgt.jpg" />
+                    <p>One of the greatest achievement made by Binitayan Dance Troupe that took a leap of faith was to
+                        audition and qualify for the semi-finals of one of the most prestigious talent searches of
+                        ABS-CBN, Pilipinas Got Talent Season 2. </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 3, 2011</div>
+                <div class="timeline-content">
+                    <h3>1st Regional Juicy Interschool Dance Competition</h3>
+                    <img src="timeline-assets/juicy2011.jpg" />
+                    <p>Binitayan Dance Troupe also became 1st Regional Juicy Interschool Dance Competition Ultimate
+                        Champion(Grade School Category) held at the Embarcadero de Legazpi, Legazpi City. </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2011</div>
+                <div class="timeline-content">
+                    <h3>Hataw at Galaw 2011</h3>
+                    <img src="timeline-assets/Hataw at Galaw 2011.jpg" />
+                    <p>The group also became a grand finalist of 97.1 OK FM's Biggest Dance Competition in Bicol Region,
+                        Hataw at Galaw 2011. </p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">October 18, 2011</div>
+                <div class="timeline-content">
+                    <h3>2011 Music and Dance Competition</h3>
+                    <img src="timeline-assets/bespep2011.jpg" />
+                    <p>For the 2nd time around, they were agai awarded as Champions in the Pep Squad Competition
+                        representing Cluster B. The competition was held at Albay Provincial Sports Complex, Travesia,
+                        Guinobatan, Albay. </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:'">
+                        View Performance Video
+                    </button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 1,2012</div>
+                <div class="timeline-content">
+                    <h3>1st Cagsawa Festival </h3>
+                    <img src="timeline-assets/cagsawa 2012.jpg" />
+                    <p>Earlier February Alongside Cagsawa Ruins, the dance troupe were invited to perform.They pep squad
+                        was also invited to perform their cheerdance in Daraga Covered Court. </p>
+                    >
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">November 5, 2012</div>
+                <div class="timeline-content">
+                    <h3>Congressional Meet: Pep Squad Competition</h3>
+                    <img src="timeline-assets/papsquad2011.jpg" />
+                    <p>They have also won 1st Place in the Congressional Meet for the 2nd time around in the Pep Squad
+                        Competition held at the Daraga North Central School, Daraga </p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 6, 2012</div>
+                <div class="timeline-content">
+                    <h3>Inter-School Dance Competition</h3>
+                    <img src="" />
+                    <p>BINITAYAN ELEMENTARY SCHOOL, BES Warriors actively participated in the Inter-School Dance
+                        Competition held at Embarcadero de Legazpi Celebration Plaza. They battled between Bicol
+                        College and Albay Central School and won the grand prize/Champion.</p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 12, 2012</div>
+                <div class="timeline-content">
+                    <h3>Karangahan Green Christmas Bulilit Pastores</h3>
+                    <img src="timeline-assets/karangahan 2012.jpg" />
+                    <p>On December 12, 2012, the dance troupe snatched the Champion seat in the very 1st Karangahan
+                        Green Christmas Bulilit Pastores at Peñaranda Park, Legazpi City.</p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">April 24, 2013</div>
+                <div class="timeline-content">
+                    <h3>Magayon Festival: Daraga Night</h3>
+                    <img src="timeline-assets/daraganight2013.jpg" />
+                    <p>On April 24, 2013, the Binitayan Dance Troupe was invited to perform in Magayon Festival:
+                        Daraga Night, held at Peñaranda Park, Legazpi City.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">April 24, 2013</div>
+                <div class="timeline-content">
+                    <h3>Champion in Congressional Meet</h3>
+                    <img src="timeline-assets/congressional.png" />
+                    <p>By the month of April, the pep squad shined again and became the Champion as they won
+                        back-to-back in the Congressional meet held in Camalig North Central School and in Albay
+                        Provincial Sports Complex, Travesia, Guinobatan, Albay.</p>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">August 17, 2013</div>
+                <div class="timeline-content">
+                    <h3>2nd Regional Juicy Interschool Dance Competition</h3>
+                    <img src="timeline-assets/juicy2013.jpg" />
+                    <p>The Binitayan Dance Troupe for the second time around became the Champion in the 2nd Regional
+                        Juicy Interschool Dance Competition Ultimate Champion (Grade School Category) held at the
+                        Embarcadero de Legazpi on August 17, 2013.</p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.facebook.com/cel.castro.79/posts/604986546218636'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">September, 2014</div>
+                <div class="timeline-content">
+                    <h3>Daraga Cultural Night</h3>
+                    <img src="timeline-assets/cultural night2014.jpg" />
+                    <p>On September, 2014, the dancers were invited to perform in the Daraga Cultural Night at
+                        Daraga covered court. The event was attended by various dignitaries and officials.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 25, 2014</div>
+                <div class="timeline-content">
+                    <h3>Division MANCOM Performance</h3>
+                    <img src="timeline-assets/mancom2014.jpg" />
+                    <p>Performers presented their Pastores during the Division MANCOM at The Concourse Convention
+                        Center on December 25, 2014.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">October 3, 2014</div>
+                <div class="timeline-content">
+                    <h3>Performance on Teachers' Day</h3>
+                    <img src="timeline-assets/almamater2014.jpg" />
+                    <p>On October 3, 2014, the dance troupe was invited by the Supreme Pupil Government of their
+                        Alma Mater to perform on Teachers' Day.</p>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 6, 2015</div>
+                <div class="timeline-content">
+                    <h3>3rd Regional Festival of Songs, Music and Dances ALAY SA SINING General Rehearsal</h3>
+                    <img src="timeline-assets/almamater2014.jpg" />
+                    <p>The dancers participated in the general rehearsal for the 3rd Regional Festival of Songs,
+                        Music and Dances ALAY SA SINING at Chansma Function Hall, Lignon Hill, DepEd Albay Division
+                        Office on February 6, 2015, in preparation for the event on February 9, 2015.</p>
+
+                </div>
+            </div>
+
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 8-9, 2015</div>
+                <div class="timeline-content">
+                    <h3>3rd Regional Festival of Songs, Music and Dances ALAY SA SINING</h3>
+                    <img src="" />
+                    <p>The Binitayan Dance Troupe, along with other schools in the province of Albay, presented a
+                        "Cinderella" dance drama in the 3rd Regional Festival of Songs, Music and Dances ALAY SA
+                        SINING held at the Iriga City Coliseum, Iriga City, on February 8-9, 2015.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 18, 2015</div>
+                <div class="timeline-content">
+                    <h3>Cagsawa Festival: Daraga North and South District Night</h3>
+                    <img src="timeline-assets/daraganight2015.jpg" />
+                    <p>The group participated in the Cagsawa Festival at the Daraga Covered Court on February 18,
+                        2015, attended by various officials and schools from Daraga.</p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">September 14, 2015</div>
+                <div class="timeline-content">
+                    <h3>Cluster B Level Elimination C Champ Moves Dance Exercise</h3>
+                    <img src="" />
+                    <p>The school participated in the Cluster B Level Elimination C Champ Moves Dance Exercise on
+                        September 14, 2015, securing the 2nd place. They competed against several districts,
+                        including Manito, Daraga North and South, Camalig North and South, Guinobatan East and West,
+                        and Jovellar.</p>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 19, 2015</div>
+                <div class="timeline-content">
+                    <h3>Karangahan Green Christmas Bulilit Pastores</h3>
+                    <img src="timeline-assets/pastores2015.jpg" />
+                    <p>For the 3rd time, the Binitayan Dance Troupe participated in the Karangahan Green Christmas
+                        Bulilit Pastores and secured the 1st place again at Peñaranda Park, Legazpi City, on
+                        December 19, 2015.</p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https:https://www.facebook.com/nikkiauriele.castro/posts/pfbid02iSFqn1BcYVZvtnn2m439X2eM8hDHv5GgmvLcaKPY8VndSkHodQpdki48QMFeeV4rl'">
+                        View Post
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 24, 2015</div>
+                <div class="timeline-content">
+                    <h3>Christmas Cheers 2015: The Official Countdown of the 30th Anniversary Celebration of Daraga
+                        Parish Youth Group</h3>
+                    <img src="" />
+                    <p>The Binitayan Dance Troupe presented the Pastores during the Christmas Cheers 2015 event,
+                        which was the official countdown of the 30th anniversary celebration of Daraga Parish Youth
+                        Group, held on December 24, 2015, at Parroquia Nuestra Señora De La Porteria Sta. Maria
+                        Hill, San Roque, Daraga, Albay.</p>
+
+                </div>
+            </div>
+
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 27, 2016</div>
+                <div class="timeline-content">
+                    <h3>Juicy Cologne Inter-School Dance Competition Champion</h3>
+                    <img src="timeline-assets/juicy2016.jpg" />
+                    <p>Amidst the pulsating energy of the Juicy Cologne Inter-School Dance Competition, the
+                        Binitayan Warriors claimed the championship for the second consecutive time. Hosted at the
+                        lively venue of Embarcadero de Legazpi, their performance ignited the stage with
+                        unparalleled talent, precision, and fervor. With dynamic choreography and flawless
+                        execution, the Binitayan Warriors captivated both judges and spectators, showcasing their
+                        unwavering dedication and undeniable prowess in the art of dance. Their victory cements
+                        their legacy as dance champions and serves as a testament to their exceptional skill and
+                        relentless determination.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">March 30, 2016</div>
+                <div class="timeline-content">
+                    <h3>Graduation Exercises at Binitayan Elementary School</h3>
+                    <img src="timeline-assets/doxology.jpg" />
+                    <p>The Binitayan Dance Troupe performed the Doxology and Intermission Number during the
+                        Graduation Exercises at Binitayan Elementary School on March 30, 2016.</p>
+
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">April 8, 2016</div>
+                <div class="timeline-content">
+                    <h3>Region IV-A Welcome Party</h3>
+                    <img src="" />
+                    <p>The dance troupe was invited to perform at the welcome party of Region IV-A, held at Daraga
+                        North Central School, Daraga, Albay. They also performed at the Region V Welcome Party at
+                        the Bicol University Commencement Grounds.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">April 23, 2016</div>
+                <div class="timeline-content">
+                    <h3>LCC Kiddie Dance Showdown</h3>
+                    <img src="timeline-assets/2nd kiddie.jpg" />
+                    <p>The Binitayan Dance Troupe participated in the LCC Kiddie Dance Showdown and secured the
+                        title of Champions for the 2nd time, held at the LCC Event Center 1 on April 23, 2016.</p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.facebook.com/analyn.sevilla.372/posts/pfbid0XqjQmaYrCdsm57ymCFSXeNuHq7nnYN6XM61Qr5ZPJ6QEP88aY3akFrWUe1c5bZepl'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">September 4, 2016</div>
+                <div class="timeline-content">
+                    <h3>Folk Dance Competition at Daraga Town Fiesta</h3>
+                    <img src="" />
+                    <p>The Binitayan Wamors won the 2nd place in the Folk Dance Competition at Daraga Town Fiesta,
+                        held at [Location]. The event was attended by various dignitaries including Daraga North
+                        Central School, Felma A. Bonito, PH. D. Daraga North District Supervisor, Hon. Gery R.
+                        Jaucian, Mayor of Daraga, Hon. Carwyn G. Baldo, Vice Mayor of Daraga, and Councilor Archie
+                        Bajamundi, Chairman, Committee on Tourism & Cultural Affairs.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">November 22, 2016</div>
+                <div class="timeline-content">
+                    <h3>Sports: Transforming Life for the Future</h3>
+                    <img src="timeline-assets/pepsquad2016.jpg" />
+                    <p>The Binitayan Dance Troupe performed in Palarong Panlalawigan 2016 at Albay Provincial Sports
+                        Complex, Travesia, Guinobatan, Albay.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 15, 2016</div>
+                <div class="timeline-content">
+                    <h3>Annual Pastores Performance</h3>
+                    <img src="" />
+                    <p>The Binitayan Dance Troupe performed the annual Pastores during the Albay Christmas Cheers
+                        2016 at Peñaranda Park, hosted by the Provincial Government of Albay under the leadership of
+                        Gov. Al Francis Bichara.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December, 2016</div>
+                <div class="timeline-content">
+                    <h3>Pastores Performance at Regional MANCOM</h3>
+                    <img src="timeline-assets/mancom2016.jpg" />
+                    <p>The Binitayan Dance Troupe was invited to perform the Pastores during the Regional MANCOM at
+                        The Concourse Convention Center in December 2016.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 6, 2016</div>
+                <div class="timeline-content">
+                    <h3>Performance at Palarong Pambansa 2016</h3>
+                    <img src="timeline-assets/palarong pambanda2017.jpg" />
+                    <p>The Binitayan Dance Troupe led the whole delegation, athletes, coaches, and chaperons of
+                        Region V at the Palarong Pambansa 2016, held at the BU Albay Sports Complex on February 6,
+                        2017.</p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">February 23, 2017</div>
+                <div class="timeline-content">
+                    <h3>Children's Month Celebration</h3>
+                    <img src="timeline-assets/fictional.jpg" />
+                    <p>The Binitayan Dance Troupe participated in the activity entitled "Fictional King and Queen
+                        2017" as part of the Children's Month Celebration. The event took place at Daraga Covered
+                        Court, Daraga Albay, and involved teachers, young teachers, pupils, parents, GPTA, and
+                        alumni.</p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.facebook.com/gems.granatin/posts/pfbid021txqRoNzavzjh4qutzm223ZZHE3SoSqB6n2MSdZkZH1phN1hFNoJYMSDUiLYEr9rl'">
+                        View Post
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 22, 2017</div>
+                <div class="timeline-content">
+                    <h3>Albay Bulilit Pastores 2017</h3>
+                    <img src="timeline-assets/pastores2018.jpg" />
+                    <p>In 2017, the Albay Pastores took center stage at the Albay Astrodome, mesmerizing audiences
+                        with their enchanting performance of "Pastores a Belen" - a captivating fusion of song and
+                        dance. Their breathtaking rendition not only secured them the championship title but also
+                        etched their name in the annals of the competition's history. With each graceful step and
+                        harmonious note, they painted a vivid tableau of tradition and passion, leaving an indelible
+                        mark on all who witnessed their triumphant showcase.
+
+                    </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">November 27, 2018</div>
+                <div class="timeline-content">
+                    <h3>Divisional Pep Squad Competition 2018</h3>
+                    <img src="timeline-assets/pinkpepsquad2018.jpg" />
+                    <p> Binitayan Dance Troupe triumphed in the Divisional Pep Squad Competition with their
+                        electrifying performance that captivated both judges and spectators alike. With synchronized
+                        movements, vibrant costumes, and pulsating beats, they commanded the stage, leaving an
+                        indelible mark of excellence. Their precision, energy, and unwavering spirit propelled them
+                        to victory, earning them the prestigious title and admiration from their peers. Binitayan
+                        Dance Troupe's win showcased not only their talent but also their dedication to their craft,
+                        solidifying their place as champions in the realm of competitive dance.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">December 17, 2018</div>
+                <div class="timeline-content">
+                    <h3>Albay Bulilit Pastores 2018</h3>
+                    <img src="timeline-assets/pastores2017.jpg" />
+                    <p>On January 12, 2019, the skilled ensemble from Binitayan Dance Troupe distinguished
+                        themselves at the Albay Bulilit Pastores Season 2 competition, securing an impressive 2nd
+                        Runner-Up title alongside the esteemed award for Best Costume.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">January 12, 2019</div>
+                <div class="timeline-content">
+                    <h3>Bulilit Pastores Season 3</h3>
+                    <img src="timeline-assets/bulilitpastores2019.jpg" />
+                    <p>Celebrating their triumphant return to the limelight, the Bulilit Pastores dance troupe
+                        clinched victory for the third consecutive time, etching their name in the annals of history
+                        as four-time champions of the revered competition. The echoes of their resounding success
+                        reverberated through the hallowed halls of the event venue on January 12, 2019. With
+                        synchronized steps and boundless energy, they captivated audiences and judges alike,
+                        solidifying their status as the epitome of grace and talent in the world of dance. As the
+                        spotlight illuminated their radiant smiles and glistening trophies, it became evident that
+                        the legacy of Bulilit Pastores was destined for greatness, inspiring future generations to
+                        strive for excellence on the dance floor.</p>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://web.facebook.com/ghenrex/posts/pfbid0278gD1RJEPBEXc3ucAuHLagZJDKyxjWpo9b87dCKS5nqPnNXe9UK5oGC2oEMgNepSl'">
+                        View Post
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.youtube.com/watch?v=U9F-ANWML3U'">
+                        View Performance Video
+                    </button>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">August 26, 2021</div>
+                <div class="timeline-content">
+                    <h3>Art and Comic Strip Against Child Labor by DOLE Albay</h3>
+                    <img src="timeline-assets/dole2021.jpg" />
+                    <p>3rd Place Arts and Crafts Category
+                        Ruiz Joaquin Mapula - Binitayan ES
+                        Coach: Maricel Castro
+                    </p>
+
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://www.facebook.com/minviluz.sampal.5/posts/pfbid0PJ8vULqnwLHAqHMBEPAJZdLNpYaNmjTnxr9aHZrJZ5RTKAiSTuph1RnwtfC1Nsaml'">
+                        View Post
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+</body>
+<script>
+
+    let sliders = document.querySelectorAll('.timeline-item .slider');
+    sliders.forEach((slider) => {
+        let slideIndex = 0;
+        showSlides(slider);
+
+        function showSlides(slider) {
+            let slides = slider.querySelectorAll('.slide');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(() => showSlides(slider), 5000); // Change image every 2 seconds
+        }
+</script>
+
+
+</script>
+
+
+</html>

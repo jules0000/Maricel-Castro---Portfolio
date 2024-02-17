@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Maricel Castro</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Recent</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Maricel Castro</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Recent</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets\mother.png" alt="Maricel Castro profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Maricel Castro</h1>
+      <p class="section__text__p2">Master Teacher III</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('Updated Personal Data Sheet - Maricel Castro.pdf')">
+          Download Personal Data Sheet
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="assets/facebook.png" alt="My Facebook profile" class="icon"
+          onclick="location.href='https://www.facebook.com/cel.castro.79'" />
+        <img src="./assets/email.png" alt="My Email profile" class="icon"
+          onclick="location.href='mailto:maricel.castro008@deped.gov.ph'" />
+      </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="assets\MOM.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>28 years <br />Teaching</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelors Degree in Education (B.Educ.)<br />Masters Degree in Education (M.Arts Educ.)</p>
+
+          </div>
+        </div>
+
+        <div class="text-description">
+          <p>When I was in college, I was hoping to take the <strong>architecture</strong> course, but my <em>Yoyo</em>,
+            my adoptive parent asked me to take <strong>Education</strong> instead since there were no teachers in the
+            family.</p>
+
+          <p>Now I come to realize, I guess teaching really is my calling. For more than 3 decades, I was able to impart
+            the skills, knowledge, experiences, and learnings that I have, not just in the four corners of the
+            classroom, but also to a lot of students, children, colleagues, parents, and the community by which they
+            were able to bring as they grew older.</p>
+
+          <p>During my tenure in <em>Binitayan Elementary School</em>, there was not much of activities that honed the
+            talents and skills of its students. The school doesn't participate much in programs outside its bounds &
+            wasn't well-known for talents coming from the school. I understood why because most of the students, even
+            with talent, didn't have the means to join or participate in activities. Some students were also part of the
+            indigenous community, but it didn't stop me from helping these kids with a lot of potential. By then, I
+            started to coach the <em>Drum & Lyre Corps</em> in _ . I also started looking for great dancers and we
+            started the <em>Dance Troupe-BES Warriors/Binitayan Dance Troupe/Pepperezzi</em>, <em>PEP Squad</em>, and
+            then the <em>Gymnastics Team</em>. Regardless of their background, as long as they can perform well, I took
+            a chance on these kids and believed in their capabilities. There was a lot of potential coming from the
+            student body. There were a lot of good children who were not just good in academics but also in physical
+            activities. There were a lot of times that we were not supported by the school financially & morally, and I
+            have to depend on my income to help my students because I believe that these kids could do more. By then, we
+            were able to join a lot of competitions. Our <em>Dance Troupe</em> and <em>PEP Squad</em> were always the
+            defending champions in competitions like _,__.</p>
+
+          <p>In gymnastics, we only started with _,. It was a struggle for us to practice since we do not have the
+            equipment for training. We improvised a lot & my athletes trained until nighttime especially when
+            competitions are coming up. By the year 200_, I was able to bring my student to the Nationals.</p>
+
+          <p>By then, <em>Binitayan Elementary School</em> became well-known for very young & well-trained
+            dancers/performers and athletes. Even the older performers, they felt intimidated in competitions seeing our
+            kids performing on stage as they well knew that my dancers were very skilled as well & can keep up with
+            them. As my student athletes/dancers grew older, doors & opportunities opened for them as they already had
+            the skills, confidence to step up.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Teaching Experience</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Teacher I</h3>
+                <p>1997 - 2009</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Teacher II</h3>
+                <p>2009 - 2011</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Teacher III</h3>
+                <p>2011 - 2019</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Master Teacher I</h3>
+                <p>2019 - 2020</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Master Teacher II</h3>
+                <p>2020 - Present</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Educational Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Interactive Whiteboards</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>E-Learning Platforms</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Online Collaboration Tools</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Achievements</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets\gawad.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Maricel Castro: GAWAD PARANGAL 2023 Most Outstanding Teacher
+          </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.facebook.com/cel.castro.79/posts/pfbid0gN1tUPCcKhUU92rzPyGBvrWc9Viz2sFV1QLz1x7L2pibTdMgDJkSaQRatxrjcR4ol'">
+              View Post
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets\nfot.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Guiding Stars to Victory: Maricel Castro's Coaching Triumph at
+            the National Festival of Talents Qualifier</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.facebook.com/depedtayosdoalbay/videos/1453406848753831'">
+              View Post
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">maricel.castro008@deped.gov.ph
+          </a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="assets\phone-call.png" alt="phone number icon" class="icon contact-icon" />
+        <p><a href="tel:09457737917">0945-773-7917</a></p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Recent</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Maricel Castro. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
